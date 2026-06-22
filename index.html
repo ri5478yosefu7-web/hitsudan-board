@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筆談ボード</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>筆談ボード</h1>
+
+    <textarea id="inputText" placeholder="ここに入力してください"></textarea>
+    <div id="topButtons">
+    <button id="clearButton">消去</button>
+    <button id="fullscreenButton">全画面</button>
+    <button id ="speakButton">🔊読み上げ</button>
+    <button id="addFavoriteButton">文字登録</button>
+    <button id="themeButton">🌙ダークモード</button>
+    </div>
+    <div class="fontArea">
+    <button id = "fontMinusButton" class="fontButton">ぁ-</button>
+    <button id = "fontPlusButton" class="fontButton">あ+</button>
+    </div>
+
+    <div id="displayText">耳が聞こえないため、筆談でお願いします。</div>
+
+    <h2>🔍　検索</h2>
+    <input 
+        type="text"
+        id="searchInput"
+        placeholder="定型文を検索"
+    />
+
+    
+
+    <h2 id ="favoriteTitle">▶️⭐　お気に入り</h2>
+    <button id="clearFavoritesButton" class="dangerButton">
+        🗑️全部削除
+    </button>
+    <div id="favoriteArea">
+
+    </div>
+
+    <h2 id="grretingTitle">▶️☺️　挨拶</h2>
+    <div id="grretingArea">
+    <button class="phraseButton grreting">おはようございます</button>
+    <button class="phraseButton grreting">こんにちは</button>
+    <button class="phraseButton grreting">お疲れ様です</button>
+    <button class="phraseButton grreting">ありがとうございます</button>
+    </div>
+
+    <h2 id="convarsationTitle">▶️💬　会話</h2>
+    <div id="convarsationArea">
+    <button class="phraseButton convarsation">はい</button>
+    <button class="phraseButton convarsation">いいえ</button>
+    <button class="phraseButton convarsation">わかった</button>
+    <button class="phraseButton convarsation">わからなかった</button>
+    <button class="phraseButton convarsation">すみません</button>
+    </div>
+
+    <h2 id="repeatTitle">▶️👂️　聞き返し</h2>
+    <div id="repeatArea">
+    <button class="phraseButton repeat">ゆっくりお話してください</button>
+    <button class="phraseButton repeat">もう一度お願いします</button>
+    <button class="phraseButton repeat">このアナウンスは何を言っていますか</button>
+    </div>
+
+    <H2 id="emergencyTitle">▶️🚑️　緊急</H2>
+    <div id="emergencyArea">
+    <button id="helpbutton" class="phraseButton emergency">HELP</button>
+    <button class="phraseButton emergency">救急車を呼んでください</button>
+    </div>
+   
+    <script src="script.js"></script>
+
+</body>
+</html>
