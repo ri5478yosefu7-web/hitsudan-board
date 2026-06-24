@@ -167,7 +167,9 @@ button{
     }
 
 hr{
-   border:20px; 
+   height: 3px;
+   background-color: black;
+   border: none;
 }
     
 }
