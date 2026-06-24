@@ -165,5 +165,9 @@ button{
         width: 100%;
         box-sizing: border-box;
     }
+
+hr{
+   border:20px; 
+}
     
 }
